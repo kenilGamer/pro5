@@ -11,10 +11,57 @@ const page = () => {
   setuserdata(a)
   }
   return (
-    <div>
-      <button onClick={getdate}> click</button>
-      {userdata}
+    <>
+    <div id="sidenav">
+        <i id="close" class="ri-close-circle-fill"></i>
+        
+        <div id="elems">
+            <h3>menu</h3>
+            <a href="index.htlm">home</a>
+            <a href="#">panel</a>
+            <a href="#">loging</a>
+            <a href="#">logout</a>
+        </div>
     </div>
+    <div id="background">
+        <div id="nav">
+            <i id="mune" class="ri-menu-2-line"></i>
+        </div>
+        <div id="hv">
+            <h1>WECOME</h1>
+            <p></p>
+            <div id="elemnts">
+                <div class="elemnts">
+                    <div class="pic">
+                    <div class="new">
+                    <i ></i>
+                    <h2>MINECRAFT</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="elemnts"><div class="pic">
+                    <div class="new">
+                    <i ></i>
+                    <h2>GTA5</h2>
+                        </div>
+                    </div></div>
+                <div class="elemnts">
+                    <div class="pic">
+                    <div class="new">
+                    <i></i>
+                    <h2>ROBLO</h2>
+                        </div>
+                    </div></div>
+                <div class="elemnts"><div class="pic">
+                    <div class="new">
+                    <i></i>
+                    <h2>forza motorsport </h2>
+                        </div>
+                    </div></div></div>
+
+            </div>
+        </div>
+    </>
   )
 }
 

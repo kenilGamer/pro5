@@ -2,18 +2,147 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 html,body{
     width: 100%;
+    height: 200%;
+}
+
+
+
+#nav i{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 140, 0);
+
+}
+#background{
+    width: 100%;
     height: 100%;
+    background-image:url(https://images5.alphacoders.com/564/thumbbig-564931.webp);
+    background-size: cover;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
 }
-body{
-    padding: 10px;
+
+    
+#hv{
+    margin-top: 60px;
+    text-align: center;
 }
-button{
-    padding: 10px 20px;
-    background-color: black;
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 600;
+#hv h1{
+    font-size: 50px;
+    background: linear-gradient(to left bottom,rgb(255, 247, 0),rgb(115, 255, 0),rgb(0, 255, 115),rgb(9, 227, 239),rgb(0, 128, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 50px;
+    color: transparent;
+}
+
+#hv p{
+    font-size: 15px;
+    color: rgb(131, 255, 206);
+}
+#elemnts{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+   
+}
+#elemnts .elemnts{
+    width: 17%;
+    height: 300px;
+    padding: 5px;
+    background: linear-gradient(to left bottom,rgb(245, 22, 22) ,rgb(27, 13, 225));
+    
+}
+@media (max-width:600px) {
+    #background{
+        background-image: none;
+    }
+    body,head{
+        display: block;
+    }
+}
+.elemnts .pic{
+    width: 100%;
+    height: 70%;
+    border-radius: 10xp;
+    background-image:url(https://images7.alphacoders.com/370/thumbbig-370408.webp);
+    background-position: center;
+    background-size: cover;
+    
+}
+#elemnts .elemnts:nth-child(2) .pic{
+ width: 100%;
+ height: 70%;
+ border-radius: 10px;
+ background-image:url(https://images7.alphacoders.com/439/thumbbig-439637.webp);
+ background-size: cover;
+ background-position: center;
+}
+#elemnts .elemnts:nth-child(3) .pic{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    background-image:url(https://images3.alphacoders.com/885/thumbbig-885750.webp);
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#elemnts .elemnts:nth-child(4) .pic{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/399/582/554/forza-motorsport-7-forza-games-pc-games-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.elemnts .new h2{
+
+    margin-top: 200px;
+    color: rgb(247, 247, 247);
+}
+.elemnts .new i{
+    margin: 100px;
+    color: rgb(253, 253, 253);
+} 
+#sidenav{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    transition: all ease-in-out;
+    transform: translate(0, -50) 1.5s;
+    width: 200px;
+    height: 80%;
+} 
+#sidenav i{
+    color: rgb(246, 140, 140);
+    margin-top: 3px;
+    margin-right: 21px;
+    cursor: pointer;
+}
+#sidenav h3{
+    margin-bottom: 50px;
+}
+#sidenav a{
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+    color: rgb(213, 104, 9)
 }
