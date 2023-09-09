@@ -1,3 +1,4 @@
+import  Mycontext  from '@/helper/Context'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -9,9 +10,14 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+Mycontext
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body suppressContentEditableWarning>
+        <Mycontext>
+        {children}
+        </Mycontext>
+      </body>
     </html>
   )
 }
